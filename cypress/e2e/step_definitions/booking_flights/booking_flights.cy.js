@@ -1,7 +1,7 @@
 import {Given, When, Then} from 'cypress-cucumber-preprocessor/steps'
 
 const FlightsPage = require('../../../page-object/FlightsPage')
-const BookingHomePage = require('../../../page-object/HomePage')
+const HomePage = require('../../../page-object/HomePage')
 
 // This is the safest way I found to avoid test crashing at the very start
 Cypress.on('uncaught:exception', (err, runnable) => {
@@ -11,11 +11,11 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 Given("I am on {string}", (url) => {
     cy.visit("https://www." + url)
     cy.wait(4000)
-    BookingHomePage.dismissSignIn()
+    HomePage.dismissSignIn()
 })
 
 When("I click Flights link", () => {
-    BookingHomePage.clickFlightsLink()
+    HomePage.clickFlightsLink()
 })
 
 When("I choose {string} of flight", (type) => {
