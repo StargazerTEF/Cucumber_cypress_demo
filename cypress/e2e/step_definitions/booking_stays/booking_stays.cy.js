@@ -9,7 +9,6 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 })
 
 Given("I am on {string}", (url) => {
-    cy.viewport(1920, 1080)
     cy.visit("https://www." + url)
     cy.wait(4000)
     HomePage.dismissSignIn()
