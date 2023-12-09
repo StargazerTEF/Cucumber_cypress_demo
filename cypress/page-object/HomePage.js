@@ -1,8 +1,9 @@
 class HomePage {
 
     elements = {
-        dismissSignInButton: () => cy.get('[aria-label="Dismiss sign-in info."]')
-    }
+        dismissSignInButton: () => cy.get('[aria-label="Dismiss sign-in info."]'),
+        flightsLink: () => cy.get('#flights')
+}
 
     clickDismissSignInPoPUpDialog() {
         this.elements.dismissSignInButton().click()
@@ -14,6 +15,10 @@ class HomePage {
                 this.clickDismissSignInPoPUpDialog()
             }
         })
+    }
+
+    clickFlightsLink() {
+        this.elements.flightsLink().click()
     }
 }
 

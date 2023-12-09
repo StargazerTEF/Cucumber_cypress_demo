@@ -31,7 +31,7 @@ When("I enter the number of adults {string}", (adults) => {
     StaysPage.enterNumberOfAdults(adults)
 })
 
-When("I enter the number of children {string} aged {string}", (children, childrenAge) => {
+When("I enter the number of children {string} and their age {string}", (children, childrenAge) => {
     StaysPage.enterNumberOfChildrenAndTheirAge(children, childrenAge)
 })
 

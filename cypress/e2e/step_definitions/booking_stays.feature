@@ -9,7 +9,7 @@ Feature: As User I should be able to book a stay on Booking website
     And I select date "<endDate>"
     And I open the occupancy menu
     And I enter the number of adults "<adults>"
-    And I enter the number of children "<children>" aged "<ages>"
+    And I enter the number of children "<children>" and their age "<ages>"
     And I enter the number of rooms "<rooms>"
     And I click 'Done' button
     And I click 'Search' button
