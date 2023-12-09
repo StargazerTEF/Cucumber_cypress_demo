@@ -3,7 +3,7 @@ Feature: As User I should be able to book a stay on Booking website
   Background: User is on Booking website
     Given I am on 'booking.com'
 
-  Scenario Outline: As a User i should be able to book a stay when i fill in the form
+  Scenario Outline: As a user I should be able to book a stay when I fill in the form
     When I enter location "<location>"
     And I select date "<startDate>"
     And I select date "<endDate>"

@@ -3,7 +3,7 @@ Feature: As User I should be able to book a flight on Booking website
   Background: User is on Booking website
     Given I am on 'booking.com'
 
-  Scenario Outline: As a User i should be able to book a flight when i fill in the form
+  Scenario Outline: As a user I should be able to book a flight when I fill in the form
     When I click Flights link
     And I choose "<type>" of flight
     And I select "<class>" class
